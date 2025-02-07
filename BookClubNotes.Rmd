@@ -1,7 +1,7 @@
 # index.Rmd
 ---
-title: "程式讀書會_資料探勘_mau"
-author: "Mau"
+title: "讀書會筆記示範"
+author: "你的名字"
 date: "`r Sys.Date()`"
 output: bookdown::gitbook
 site: bookdown::bookdown_site
@@ -67,3 +67,6 @@ bookdown::render_book("index.Rmd", "bookdown::gitbook")
 
 ## 部署到 GitHub Pages
 請將 `docs/` 設定為 GitHub Pages 部署目錄。
+
+<!--chapter:end:index.Rmd-->
+
