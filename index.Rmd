@@ -2,10 +2,11 @@
 ---
 title: "Mau"
 author: "Mau"
-date: "`r Sys.Date()`"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
 output: bookdown::gitbook
 site: bookdown::bookdown_site
 ---
+
 
 # 前言
 

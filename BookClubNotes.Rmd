@@ -2,10 +2,11 @@
 ---
 title: "Mau"
 author: "Mau"
-date: "`r Sys.Date()`"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
 output: bookdown::gitbook
 site: bookdown::bookdown_site
 ---
+
 
 # 前言
 
@@ -69,4 +70,20 @@ bookdown::render_book("index.Rmd", "bookdown::gitbook")
 請將 `docs/` 設定為 GitHub Pages 部署目錄。
 
 <!--chapter:end:index.Rmd-->
+
+# 第一章：範例章節
+
+這是第一章的示範內容。
+
+## 主要內容
+
+這裡是主要的討論點：
+
+- **重點 1**: 如何學習 R 語言？
+- **重點 2**: `bookdown` 的使用方法
+
+```{r}
+plot(1:10, 1:10, main="範例圖表")
+
+<!--chapter:end:chapter1.Rmd-->
 
