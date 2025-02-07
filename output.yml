@@ -1,6 +1,15 @@
 bookdown::gitbook:
-  split_by: none
+  split_by: chapter
   config:
     toc:
+      before: |
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="./chapter01.html">第一章</a></li>
       collapse: section
+      toc_depth: 2
+    search: yes
     download: [pdf, epub]
+    sharing:
+      facebook: yes
+      twitter: yes
+      github: yes

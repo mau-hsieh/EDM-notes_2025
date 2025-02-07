@@ -1,0 +1,30 @@
+# chatper01 時間資料分析
+
+本章將介紹時間資料分析的基本概念與應用。
+
+##  時間序列概述
+
+時間序列資料是一組按照時間順序排列的數據點，常見於經濟、金融、氣象與生物醫學領域。
+
+##  時間序列的基本組成
+
+- **趨勢 (Trend)**：資料長期變化的方向。
+- **季節性 (Seasonality)**：定期重複的模式，如每年銷售高峰。
+- **循環 (Cycle)**：長期波動，通常超過一年。
+- **隨機變動 (Irregularity)**：無法預測的短期變化。
+
+##  R 語言的時間序列處理
+
+可以使用 `ts`、`zoo` 和 `xts` 套件來處理時間序列資料。例如：
+
+```{r}
+library(ggplot2)
+library(forecast)
+library(tseries)
+
+data(AirPassengers)
+air_ts <- ts(AirPassengers, start = c(1949, 1), frequency = 12)
+plot(air_ts, main="AirPassengers 時間序列資料")
+```
+
+---
