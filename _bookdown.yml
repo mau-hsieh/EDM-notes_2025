@@ -1,3 +1,3 @@
 book_filename: "BookClubNotes"
 delete_merged_file: true
-deletion: ["_book", "docs"]
+output_dir: "docs"

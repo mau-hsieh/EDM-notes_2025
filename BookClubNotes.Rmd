@@ -1,6 +1,6 @@
 # index.Rmd
 ---
-title: "程式讀書會_資料探勘_mau"
+title: "Mau"
 author: "Mau"
 date: "`r Sys.Date()`"
 output: bookdown::gitbook
