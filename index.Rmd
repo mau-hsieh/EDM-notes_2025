@@ -1,0 +1,69 @@
+# index.Rmd
+---
+title: "讀書會筆記示範"
+author: "你的名字"
+date: "`r Sys.Date()`"
+output: bookdown::gitbook
+site: bookdown::bookdown_site
+---
+
+# 前言
+
+歡迎來到我們的讀書會筆記！這裡記錄了我們的討論內容與學習心得。
+
+# 章節列表
+- [第一章](chapter1.html)
+
+---
+
+# chapter1.Rmd
+
+# 第一章：範例章節
+
+這是第一章的示範內容。
+
+## 主要內容
+
+這裡是主要的討論點：
+
+- **重點 1**: 如何學習 R 語言？
+- **重點 2**: `bookdown` 的使用方法
+
+這是一個 R 語法範例：
+
+```{r}
+plot(1:10, 1:10, main="範例圖表")
+```
+
+---
+
+# _bookdown.yml
+book_filename: "BookClubNotes"
+deletion: ["_book", "docs"]
+
+---
+
+# _output.yml
+bookdown::gitbook:
+  css: [style.css]
+  split_by: chapter
+  config:
+    toc:
+      collapse: section
+    download: [pdf, epub]
+
+---
+
+# README.md
+# 讀書會筆記專案
+
+這是 `bookdown` 建立的讀書會筆記範例。
+
+## 如何編譯
+
+```r
+bookdown::render_book("index.Rmd", "bookdown::gitbook")
+```
+
+## 部署到 GitHub Pages
+請將 `docs/` 設定為 GitHub Pages 部署目錄。
