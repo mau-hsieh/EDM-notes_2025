@@ -6,6 +6,14 @@
 
 作者: MAU
 
+本網頁將討論 Data mining 為主的技術以及理論
+
+參考書籍:
+1.資料挖礦與大數據分析 (Data Mining & Big Data Analytics) 簡禎富
+https://www.tenlong.com.tw/products/9789869688130
+
+2.
+https://otexts.com/fpp3/intro.html
 
 
 [➡ 前往第一章](chapter01.html)
